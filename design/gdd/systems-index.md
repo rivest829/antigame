@@ -20,16 +20,16 @@
 | # | System Name | Category | Priority | Status | Design Doc | Depends On |
 |---|-------------|----------|----------|--------|------------|------------|
 | 1 | 角色属性系统 (Character Stats) | Core | MVP | Designed | design/gdd/character-stats.md | — |
-| 2 | 曲目数据库 (Song Database) | Core | MVP | Not Started | — | — |
-| 3 | 内容数据库 (Content Database) | Core | MVP | Not Started | — | — |
-| 4 | 事件模板系统 (Event Template) | Narrative | MVP | Not Started | — | — |
-| 5 | 时间管理/离线收益系统 (Time & Offline Revenue) | Core | MVP | Not Started | — | — |
-| 6 | 存档/加载系统 (Save/Load) | Persistence | MVP | Not Started | — | — |
-| 7 | 场景管理器 (Scene Manager) | Core | MVP | Not Started | — | — |
-| 8 | 资源加载系统 (Resource Loader) | Core | MVP | Not Started | — | — |
-| 9 | 音频系统 (Audio System) | Audio | MVP | Not Started | — | — |
-| 10 | 放置排练系统 (Idle Rehearsal) | Gameplay | MVP | Not Started | — | 角色属性, 曲目数据库, 时间管理 |
-| 11 | 关系矩阵系统 (Relationship Matrix) | Gameplay | MVP | Not Started | — | 角色属性 |
+| 2 | 曲目数据库 (Song Database) | Core | MVP | Designed | design/gdd/song-database.md | — |
+| 3 | 内容数据库 (Content Database) | Core | MVP | Designed | design/gdd/content-database.md | — |
+| 4 | 事件模板系统 (Event Template) | Narrative | MVP | Designed | design/gdd/event-template.md | — |
+| 5 | 时间管理/离线收益系统 (Time & Offline Revenue) | Core | MVP | Designed | design/gdd/time-offline-revenue.md | — |
+| 6 | 存档/加载系统 (Save/Load) | Persistence | MVP | Designed | design/gdd/save-load.md | — |
+| 7 | 场景管理器 (Scene Manager) | Core | MVP | Designed | design/gdd/scene-manager.md | — |
+| 8 | 资源加载系统 (Resource Loader) | Core | MVP | Designed | design/gdd/resource-loader.md | — |
+| 9 | 音频系统 (Audio System) | Audio | MVP | Designed | design/gdd/audio-system.md | — |
+| 10 | 放置排练系统 (Idle Rehearsal) | Gameplay | MVP | Designed | design/gdd/idle-rehearsal.md | 角色属性, 曲目数据库, 时间管理 |
+| 11 | 关系矩阵系统 (Relationship Matrix) | Gameplay | MVP | Designed | design/gdd/relationship-matrix.md | 角色属性 |
 | 12 | 演出难度系统 (Performance Difficulty) | Gameplay | MVP | Not Started | — | 内容数据库 |
 | 13 | 声誉系统 (Reputation System) | Progression | MVP | Not Started | — | 内容数据库 |
 | 14 | 化学反应系统 (Chemistry System) | Gameplay | MVP | Not Started | — | 放置排练, 关系矩阵 |
@@ -171,10 +171,10 @@ Systems sorted by dependency order — design and build from top to bottom.
 | Metric | Count |
 |--------|-------|
 | Total systems identified | 24 |
-| Design docs started | 0 |
+| Design docs started | 3 |
 | Design docs reviewed | 0 |
 | Design docs approved | 0 |
-| MVP systems designed | 0/21 |
+| MVP systems designed | 3/21 |
 | Vertical Slice systems designed | 0/3 |
 
 ---
