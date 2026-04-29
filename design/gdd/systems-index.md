@@ -30,16 +30,16 @@
 | 9 | 音频系统 (Audio System) | Audio | MVP | Designed | design/gdd/audio-system.md | — |
 | 10 | 放置排练系统 (Idle Rehearsal) | Gameplay | MVP | Designed | design/gdd/idle-rehearsal.md | 角色属性, 曲目数据库, 时间管理 |
 | 11 | 关系矩阵系统 (Relationship Matrix) | Gameplay | MVP | Designed | design/gdd/relationship-matrix.md | 角色属性 |
-| 12 | 演出难度系统 (Performance Difficulty) | Gameplay | MVP | Not Started | — | 内容数据库 |
-| 13 | 声誉系统 (Reputation System) | Progression | MVP | Not Started | — | 内容数据库 |
-| 14 | 化学反应系统 (Chemistry System) | Gameplay | MVP | Not Started | — | 放置排练, 关系矩阵 |
-| 15 | 演出判定系统 (Performance Judgment) | Gameplay | MVP | Not Started | — | 放置排练, 演出难度, 声誉 |
-| 16 | 叙事事件系统 (Narrative Events) | Narrative | MVP | Not Started | — | 事件模板, 化学反应, 关系矩阵 |
-| 17 | 进度解锁系统 (Progression Unlock) | Progression | MVP | Not Started | — | 演出判定, 声誉, 内容数据库 |
-| 18 | 排练计划UI (Rehearsal Planning UI) | UI | MVP | Not Started | — | 放置排练 |
-| 19 | 主界面/仪表盘UI (Main Dashboard UI) | UI | MVP | Not Started | — | 放置排练, 进度解锁 |
-| 20 | 叙事事件UI (Narrative Event UI) | UI | MVP | Not Started | — | 叙事事件 |
-| 21 | 演出结果UI (Performance Result UI) | UI | MVP | Not Started | — | 演出判定 |
+| 12 | 演出难度系统 (Performance Difficulty) | Gameplay | MVP | Designed | design/gdd/performance-difficulty.md | 内容数据库 |
+| 13 | 声誉系统 (Reputation System) | Progression | MVP | Designed | design/gdd/reputation-system.md | 内容数据库 |
+| 14 | 化学反应系统 (Chemistry System) | Gameplay | MVP | Designed | design/gdd/chemistry-system.md | 放置排练, 关系矩阵 |
+| 15 | 演出判定系统 (Performance Judgment) | Gameplay | MVP | Designed | design/gdd/performance-judgment.md | 放置排练, 演出难度, 声誉 |
+| 16 | 叙事事件系统 (Narrative Events) | Narrative | MVP | Designed | design/gdd/narrative-events.md | 事件模板, 化学反应, 关系矩阵 |
+| 17 | 进度解锁系统 (Progression Unlock) | Progression | MVP | Designed | design/gdd/progression-unlock.md | 演出判定, 声誉, 内容数据库 |
+| 18 | 排练计划UI (Rehearsal Planning UI) | UI | MVP | Designed | design/gdd/rehearsal-planning-ui.md | 放置排练 |
+| 19 | 主界面/仪表盘UI (Main Dashboard UI) | UI | MVP | Designed | design/gdd/main-dashboard-ui.md | 放置排练, 进度解锁 |
+| 20 | 叙事事件UI (Narrative Event UI) | UI | MVP | Designed | design/gdd/narrative-event-ui.md | 叙事事件 |
+| 21 | 演出结果UI (Performance Result UI) | UI | MVP | Designed | design/gdd/performance-result-ui.md | 演出判定 |
 | 22 | 通知系统 (Notification System) | Meta | Vertical Slice | Not Started | — | 时间管理, 进度解锁 |
 | 23 | 新手引导系统 (Tutorial System) | Meta | Vertical Slice | Not Started | — | 几乎所有系统 |
 | 24 | 设置菜单UI (Settings Menu UI) | UI | Vertical Slice | Not Started | — | 音频系统, 存档/加载 |
@@ -171,18 +171,22 @@ Systems sorted by dependency order — design and build from top to bottom.
 | Metric | Count |
 |--------|-------|
 | Total systems identified | 24 |
-| Design docs started | 3 |
+| Design docs started | 21 |
 | Design docs reviewed | 0 |
 | Design docs approved | 0 |
-| MVP systems designed | 3/21 |
+| MVP systems designed | 21/21 |
 | Vertical Slice systems designed | 0/3 |
 
 ---
 
 ## Next Steps
 
-- [ ] Design MVP-tier systems first (use `/design-system [system-name]`)
-- [ ] Start with **角色属性系统** (design order #1) or **时间管理/离线收益** (highest technical risk)
+- [x] Design Foundation-layer systems (9/9 complete)
+- [x] Design Core-layer systems: 放置排练, 关系矩阵, 演出难度, 声誉系统 (4/4 complete)
+- [x] Design Feature-layer systems: 化学反应, 演出判定, 叙事事件, 进度解锁 (4/4 complete)
+- [x] Design Presentation-layer systems: 排练计划UI, 主界面UI, 叙事事件UI, 演出结果UI (4/4 complete)
+- [ ] Design Polish-layer systems (Vertical Slice): 通知, 新手引导, 设置菜单
 - [ ] Run `/design-review` on each completed GDD
-- [ ] Prototype the highest-risk system early (`/prototype time-offline-revenue`)
-- [ ] Run `/gate-check pre-production` when MVP systems are designed
+- [ ] Run `/gate-check pre-production` when all 21 MVP systems are designed
+- [ ] Run `/design-review` on each completed GDD
+- [ ] Run `/gate-check pre-production` when all 21 MVP systems are designed
